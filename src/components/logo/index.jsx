@@ -20,6 +20,10 @@ const LogoImg = styled.img`
   height: 100px;
   margin-right: 6px;
   `};
+
+  @media screen and (max-width: 480px) {
+  margin-right: 2px;
+}
 `;
 
 const LogoText = styled.div`

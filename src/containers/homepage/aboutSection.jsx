@@ -23,9 +23,7 @@ export function AboutSection(props) {
   return (
     <AboutContainer name="aboutSection">
       <SectionTitle> About </SectionTitle>
-      <Marginer direction="vertical" margin="2em" />
       <OurService
-        title="GETTING STARTED"
         description="The MonstroCities is the first true social avatar metaverse game. MonstroCities is a collection of 8,000 unique NFTs consisting of four elemental monster civilizations living on the Ethereum blockchain as $MONSTRO tokens. Every monster is programmatically generated from a pool of 424 accessories to ensure they are all completely unique.
 
 Each monster will be a character in the MonstroCities metaverse game. While we have developed an initial game concept, the MonsterDAO will ultimately determine how the game develops.

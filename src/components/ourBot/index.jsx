@@ -5,12 +5,22 @@ const BotContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+
 `;
 
 
 const BotImg = styled.img`
   width: 18em;
   height: 24em;
+
+  @media screen and (max-width: 480px) {
+  width: 7em;
+  height: 12em;
+}
 `;
 
 
@@ -31,6 +41,11 @@ const Details = styled.p`
     font-weight: bold;
     color: #FFFFFF;
     max-width: 50%;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      font-weight: normal;
+    }
 `;
 
 

@@ -9,6 +9,12 @@ const FeatureContainer = styled.div`
   height: 250px;
   width: 350px;
   margin: 20px 20px;
+
+  @media screen and (max-width: 480px) {
+    height: 150px;
+    width: 280px;
+    align-items: center;
+  }
 `;
 
 

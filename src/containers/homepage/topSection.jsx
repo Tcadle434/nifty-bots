@@ -18,12 +18,18 @@ import { Element, scroller } from "react-scroll";
 import Typist from "react-typist";
 import Coverflow from 'react-coverflow';
 
+import { useMediaQuery } from "react-responsive";
+
 const TopContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding: 0;
   background-image:url(${BackgroundImg});
   position=relative;
+
+  @media screen and (max-width: 480px) {
+    height: 100vh;
+}
 `;
 
 const BackgroundFilter = styled.div`
@@ -41,7 +47,14 @@ const SloganText = styled.h1`
   font-weight: 400;
   color: #FFFFFF;
   margin: 0;
-  line-height: 1.4
+  line-height: 1.4;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+  width: 100%;
+  font-size: 32px;
+}
+
 `;
 
 const MintText = styled.h2`
@@ -50,7 +63,14 @@ const MintText = styled.h2`
   font-weight: 400;
   color: ${theme.primary};
   margin: 0;
-  line-height: 1.4
+  line-height: 1.4;
+
+  @media screen and (max-width: 480px) {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
 `;
 
 const ButtonContainer = styled.div`
@@ -63,10 +83,29 @@ const CarouselContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+`;
+
+const CarouselContainerTwo = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 `;
 
 
 export function TopSection(props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
 
   return(
   <Element name="topSection">
@@ -79,10 +118,14 @@ export function TopSection(props) {
         <Marginer direction="vertical" margin="4em" />
 
         <CarouselContainer>
+          <CarouselContainerTwo>
           <CarouselCard imgUrl={BotOne} />
           <CarouselCard imgUrl={BotTwo} />
+          </CarouselContainerTwo>
+          <CarouselContainerTwo>
           <CarouselCard imgUrl={BotThree} />
           <CarouselCard imgUrl={BotFour} />
+          </CarouselContainerTwo>
         </CarouselContainer>
 
         <Marginer direction="vertical" margin="4em" />

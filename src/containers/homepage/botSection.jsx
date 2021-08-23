@@ -25,6 +25,11 @@ const BotContainerRow = styled.div`
   align-items: center;
   flex-direction: "row";
   margin-bottom: 2em;
+
+  @media screen and (max-width: 480px) {
+  width: 100%;
+  display: block;
+}
 `;
 
 export function BotSection(props) {
@@ -33,7 +38,6 @@ export function BotSection(props) {
     <BotSectionContainer name="botSection">
     <SectionTitle> The Bots </SectionTitle>
 
-    <Marginer direction="vertical" margin="2em" />
 
       <BotContainerRow>
         <Marginer direction="vertical" margin="1em" />

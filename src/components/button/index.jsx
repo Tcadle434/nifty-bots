@@ -20,6 +20,10 @@ const ButtonWrapper = styled.button`
     border: none;
     color: #FFFFFF;
   }
+
+  @media screen and (max-width: 480px) {
+  font-size: 12px;
+}
 `;
 
 export function Button(props) {

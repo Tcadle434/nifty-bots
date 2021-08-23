@@ -10,6 +10,10 @@ const CardContainer = styled.div`
   flex-direction: column;
   padding: 10px 10px;
 
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+
 `;
 
 const BotImg = styled.img`
@@ -20,6 +24,12 @@ const BotImg = styled.img`
   &:hover {
         transform:scale(1.3, 1.3);
   }
+
+  @media screen and (max-width: 480px) {
+  width: 7em;
+  height: 12em;
+}
+
 `;
 
 export function CarouselCard(props) {

@@ -7,7 +7,6 @@ import { Marginer } from "../../components/marginer";
 import { Element, scroller } from "react-scroll";
 
 
-
 const NavbarContainer = styled.div`
   width: 100%;
   height: 100px;
@@ -20,6 +19,10 @@ const NavbarContainer = styled.div`
 
 const BrandContainer = styled.div`
   margin-left: 15%;
+
+  @media screen and (max-width: 480px) {
+  margin-left: 5%;
+}
   `;
 
 const AccessibilityContainer = styled.div`
