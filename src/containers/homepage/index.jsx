@@ -5,6 +5,7 @@ import { AboutSection } from "./aboutSection";
 import { BotSection } from "./botSection";
 import { FeaturesSection } from "./featuresSection";
 import { RoadmapSection } from "./roadmapSection";
+import { FooterSection } from "./footerSection";
 import { Marginer } from "../../components/marginer";
 
 
@@ -23,6 +24,7 @@ export function Homepage(props) {
         <BotSection />
         <FeaturesSection />
         <RoadmapSection />
+        <FooterSection />
       </PageContainer>
     );
 }

@@ -5,6 +5,8 @@ export const SectionTitle = styled.h1`
   font-weight: bold;
   color: #FFFFFF;
   font-family: Roboto Condensed;
+  text-align: center;
+
 
   @media screen and (max-width: 480px) {
   text-align: center;
