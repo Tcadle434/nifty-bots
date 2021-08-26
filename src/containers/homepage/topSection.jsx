@@ -44,7 +44,7 @@ const BackgroundFilter = styled.div`
 `;
 
 const SloganText = styled.h1`
-  font-family: Disposable Droid BB;
+  font-family: SF TransRobotics;
   font-size: 64px;
   font-weight: 400;
   color: #FFFFFF;
@@ -66,6 +66,22 @@ const MintText = styled.h2`
   color: ${theme.primary};
   margin: 0;
   line-height: 1.4;
+
+  @media screen and (max-width: 480px) {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+`;
+
+const SubText = styled.h2`
+  font-family: Disposable Droid BB;
+  font-size: 56px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.2;
 
   @media screen and (max-width: 480px) {
   width: 100%;
@@ -115,8 +131,8 @@ export function TopSection(props) {
       <BackgroundFilter>
       <Navbar />
         <Marginer direction="vertical" margin="4em" />
-        <SloganText> NIFTY BOTS... </SloganText>
-        <SloganText>ROLL OUT</SloganText>
+        <SloganText> ANTI SOCIAL </SloganText>
+        <SloganText> ROBOT CLUB </SloganText>
         <Marginer direction="vertical" margin="4em" />
 
         <CarouselContainer>
@@ -131,6 +147,8 @@ export function TopSection(props) {
         </CarouselContainer>
 
         <Marginer direction="vertical" margin="4em" />
+          <SubText> The newest Play to Earn Blockchain game</SubText>
+          <SubText> Own your Bot. Battle others. Earn Ethereum</SubText>
         <Typist>
           <MintText> Minting Soon...</MintText>
         </Typist>

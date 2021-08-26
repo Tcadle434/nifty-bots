@@ -26,10 +26,10 @@ const BotImg = styled.img`
 
 const Title = styled.h2`
   color: #FFFFFF;
-  font-family: Roboto Condensed;
+  font-family: Disposable Droid BB;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 32px;
   margin: 10px 0;
 `;
 
@@ -37,13 +37,14 @@ const Details = styled.p`
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 18px;
+    font-family: Disposable Droid BB;
+    font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
     max-width: 50%;
 
     @media screen and (max-width: 480px) {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: normal;
     }
 `;
