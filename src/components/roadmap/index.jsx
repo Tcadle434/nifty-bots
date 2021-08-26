@@ -28,7 +28,7 @@ const RoadmapImg = styled.img`
 `;
 
 export function OurRoadmap(props) {
-const { imgUrl} = props;
+const { imgUrl } = props;
 
   return (
     <RoadmapImg src={imgUrl} />

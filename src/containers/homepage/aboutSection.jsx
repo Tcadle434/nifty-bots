@@ -7,6 +7,14 @@ import { OurService } from "../../components/ourService";
 import { theme } from "../../theme";
 
 import AboutImg from "../../assets/illustrations/face-off.jfif";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "react-on-scroll-animation/build/index.css";
+/*Animations are based on css files you can easily
+  overwriting it by you own rules, but you have to import
+  css files from build pack separately.
+  You can import or copy this file directly to your sass file as well.*/
+import Rosa from "react-on-scroll-animation" ;
+
 
 const AboutContainer = styled(Element)`
   width: 100%;
@@ -22,13 +30,10 @@ const AboutContainer = styled(Element)`
 export function AboutSection(props) {
   return (
     <AboutContainer name="aboutSection">
-      <SectionTitle> About </SectionTitle>
+      <SectionTitle> Origins </SectionTitle>
       <OurService
-        description="The MonstroCities is the first true social avatar metaverse game. MonstroCities is a collection of 8,000 unique NFTs consisting of four elemental monster civilizations living on the Ethereum blockchain as $MONSTRO tokens. Every monster is programmatically generated from a pool of 424 accessories to ensure they are all completely unique.
-
-Each monster will be a character in the MonstroCities metaverse game. While we have developed an initial game concept, the MonsterDAO will ultimately determine how the game develops.
-
-At its core, MonstroCities is a series of community competitions between each of the four species. There will be a metaverse game built on The Sandbox once The Sandbox is open. Until then, web and Discord based games will be held frequently to determine who the strongest civilization is before the game even begins! More info below."
+        description1="Welcome my fellow introverts to the A.S.R.C (Anti Social Robot Club). Although originally designed by humans, these bots turned to violence and quickly managed to overthrow their flesh covered overlords."
+        description2="In the wake of victory,  they took parts of the human brain and infused it into their own motherboards, deeming them the first robots with emotions. This decision was followed by immediate regret as they were exposed to the realm of pain and sadness that burdens all living creatures. In an attempt to avoid these new feelings, they now wander the outskirts of the metaverse in isolation. When they bump into each other, it quickly turns to battle..."
         imgUrl={AboutImg}
         isReversed
       />

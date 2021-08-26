@@ -10,6 +10,9 @@ import BotTwo from "../../assets/illustrations/bot2.jpg";
 import BotThree from "../../assets/illustrations/bot3.jpg";
 import BotFour from "../../assets/illustrations/bot4.jpg";
 
+import BotOneReal from "../../assets/illustrations/hotdog_bot_no_background.png";
+
+
 const BotSectionContainer = styled(Element)`
   width: 100%;
   min-height:800px;
@@ -43,22 +46,22 @@ export function BotSection(props) {
         <Marginer direction="vertical" margin="1em" />
         <OurBot
           title="Form 1"
-          imgUrl={BotOne}
+          imgUrl={BotOneReal}
           description = "this is a test description of one of our bots look how cool he is omg wow woo yay"
         />
         <OurBot
           title="Form 2"
-          imgUrl={BotTwo}
+          imgUrl={BotOneReal}
           description = "this is a test description of one of our bots look how cool he is omg wow woo yay"
         />
         <OurBot
           title="Form 3"
-          imgUrl={BotThree}
+          imgUrl={BotOneReal}
           description = "this is a test description of one of our bots look how cool he is omg wow woo yay"
         />
         <OurBot
           title="Form 4"
-          imgUrl={BotFour}
+          imgUrl={BotOneReal}
           description = "this is a test description of one of our bots look how cool he is omg wow woo yay"
         />
       </BotContainerRow>

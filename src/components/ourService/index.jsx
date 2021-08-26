@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components/macro";
+import "react-on-scroll-animation/build/index.css";
+/*Animations are based on css files you can easily
+  overwriting it by you own rules, but you have to import
+  css files from build pack separately.
+  You can import or copy this file directly to your sass file as well.*/
+import Rosa from "react-on-scroll-animation" ;
+
+
 
 const ServiceContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: ${({ isReversed }) => isReversed && "row-reverse"};
   margin-bottom: 2em;
+  data-aos: fade-up;
 
   @media screen and (max-width: 480px) {
   justify-content: center;
@@ -24,7 +33,7 @@ const ServiceImg = styled.img`
 }
 `;
 
-const DescriptionContainer = styled.div`
+const DescriptionContainer = styled(Rosa)`
   display: flex;
   flex-direction: column;
   max-width: 50%;
@@ -39,12 +48,12 @@ const DescriptionContainer = styled.div`
 
 const Details = styled.p`
   color: #000000;
-  font-family: Roboto Condensed;
+  font-family: Disposable Droid BB;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  max-width: 50%;
+  max-width: 80%;
 
   @media screen and (max-width: 480px) {
     max-width: 90%;
@@ -53,13 +62,15 @@ const Details = styled.p`
 }
 `;
 
+
 export function OurService(props) {
-const { imgUrl, description, isReversed } = props;
+const { imgUrl, description1, description2, isReversed } = props;
 
   return (
     <ServiceContainer isReversed={isReversed}>
-        <DescriptionContainer>
-          <Details> {description} </Details>
+        <DescriptionContainer animation="zoom-in" duration={200} delay={100}>
+          <Details> {description1} </Details>
+          <Details> {description2} </Details>
         </DescriptionContainer>
         <ServiceImg src={imgUrl} />
     </ServiceContainer>

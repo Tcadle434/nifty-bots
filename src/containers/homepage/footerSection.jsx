@@ -24,7 +24,7 @@ const FooterTitle = styled.h1`
   font-size: 48px;
   font-weight: bold;
   color: ${theme.primary};
-  font-family: Roboto Condensed;
+  font-family: SF TransRobotics;
   text-align: center;
 
 

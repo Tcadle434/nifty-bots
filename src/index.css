@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family:'Disposable Droid BB';
+  src: local('Disposable Droid BB'), url(./fonts/DisposableDroidBB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'Android 7';
+  src: local('Android 7'), url(./fonts/android_7.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'SF TransRobotics';
+  src: local('SF TransRobotics'), url(./fonts/SFTransRobotics.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
