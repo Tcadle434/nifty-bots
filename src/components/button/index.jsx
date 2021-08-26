@@ -8,9 +8,9 @@ const ButtonWrapper = styled.button`
   background-color: transparent;
   color: #FFFFFF;
   font-weight: normal;
-  font-size: ${({small}) => (small ? "20px" : "30px")};
-  font-family: Roboto Condensed;
-  outline: none;
+  font-size: ${({small}) => (small ? "24px" : "32px")};
+  font-family: Disposable Droid BB;
+    outline: none;
   border: none;
   transition: all 220ms ease-in-out;
   cursor: pointer;

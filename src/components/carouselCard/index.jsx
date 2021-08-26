@@ -26,7 +26,7 @@ const BotImg = styled.img`
   }
 
   @media screen and (max-width: 480px) {
-  width: 7em;
+  width: 8em;
   height: 12em;
 }
 
