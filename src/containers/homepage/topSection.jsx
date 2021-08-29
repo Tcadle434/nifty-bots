@@ -147,10 +147,8 @@ export function TopSection(props) {
         </CarouselContainer>
 
         <Marginer direction="vertical" margin="4em" />
-          <SubText> The newest Play to Earn Blockchain game</SubText>
-          <SubText> Own your Bot. Battle others. Earn Ethereum</SubText>
         <Typist>
-          <MintText> Minting Soon...</MintText>
+          <MintText> Minting Soon on Solana...</MintText>
         </Typist>
 
       </BackgroundFilter>

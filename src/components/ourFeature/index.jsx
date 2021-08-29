@@ -9,9 +9,10 @@ const FeatureContainer = styled.div`
   height: 250px;
   width: 350px;
   margin: 20px 20px;
+  border-radius: 20px;
 
   @media screen and (max-width: 480px) {
-    height: 150px;
+    height: 180px;
     width: 280px;
     align-items: center;
   }
@@ -30,9 +31,16 @@ const Details = styled.p`
     display: flex;
     text-align: center;
     flex-direction: column;
-    font-size: 18px;
+    font-family: Disposable Droid BB;
+    font-size: 24px;
     font-weight: normal;
     color: #FFFFFF;
+    max-width: 85%;
+
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      font-weight: normal;
+    }
 `;
 
 

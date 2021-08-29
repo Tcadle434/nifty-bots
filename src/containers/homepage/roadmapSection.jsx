@@ -15,7 +15,7 @@ import AboutImg from "../../assets/illustrations/face-off.jfif";
 
 const RoadmapContainer = styled(Element)`
   width: 100%;
-  min-height: 1400px;
+  min-height: 1600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +28,6 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   .vertical-timeline-element-content {
     border-radius: 20px;
     background-color: ${theme.primary}!important;
-    color: #fff!important;
-    border: 5px solid #fff!important;
     box-shadow: none!important;
   }
 
@@ -42,6 +40,25 @@ const TimelineImg = styled.img`
 
 `;
 
+const DetailsHeader = styled.h3`
+  font-family: SF TransRobotics;
+  font-weight: 400;
+  font-size: 26px;
+
+    @media screen and (max-width: 480px) {
+
+    }
+`;
+
+const Details = styled.p`
+  font-family: Disposable Droid BB;
+  font-size: 20px!important;
+
+    @media screen and (max-width: 480px) {
+
+    }
+`;
+
 
 export function RoadmapSection(props) {
   return (
@@ -51,72 +68,74 @@ export function RoadmapSection(props) {
       <VerticalTimeline>
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <DetailsHeader className="vertical-timeline-element-title">Bots, Roll Out</DetailsHeader>
+          <Details>
+            In late September the Anti Social Bots will be available to mint through our website
+          </Details>
         </StyledVerticalTimelineElement>
 
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <DetailsHeader className="vertical-timeline-element-title">Rewards</DetailsHeader>
+          <Details>
+            Throughout the mint, there will be several SOCIAL bots in the mix who are outliers. If purchased, you will be sent 10 SOL
+          </Details>
         </StyledVerticalTimelineElement>
 
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <DetailsHeader className="vertical-timeline-element-title">Rarities Released</DetailsHeader>
+          <Details>
+             The site will be updated to showcase all attributes and their associated rarity value
+          </Details>
         </StyledVerticalTimelineElement>
 
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <DetailsHeader className="vertical-timeline-element-title">Merch Drop</DetailsHeader>
+          <Details>
+            Giveaways and contests will be held to decide who will receive free A.S.R.C merch
+          </Details>
         </StyledVerticalTimelineElement>
 
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <DetailsHeader className="vertical-timeline-element-title">Game Development</DetailsHeader>
+          <Details>
+            After the mint, we will use the funds to revamp our site to handle a full Play-To-Earn battle-based game
+          </Details>
+        </StyledVerticalTimelineElement>
+
+        <StyledVerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
+        >
+          <DetailsHeader className="vertical-timeline-element-title">You Tell Us</DetailsHeader>
+          <Details>
+            As a member of the A.S.R.C your voice matters. Help lead this group of insociable shells to a bright future
+          </Details>
         </StyledVerticalTimelineElement>
 
       </VerticalTimeline>
