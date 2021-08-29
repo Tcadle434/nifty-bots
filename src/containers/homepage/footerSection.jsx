@@ -82,7 +82,7 @@ export function FooterSection(props) {
       <FooterTitle>
         Follow Us
       </FooterTitle>
-      <Details> © 2021 | NiftyBots </Details>
+      <Details> © 2021 | Anti Social Robot Club </Details>
       <Marginer direction="vertical" margin="1em" />
 
       <SocialMediaRow>

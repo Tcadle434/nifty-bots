@@ -29,8 +29,13 @@ const Title = styled.h2`
   font-family: Disposable Droid BB;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 40px;
   margin: 10px 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+    font-weight: normal;
+  }
 `;
 
 const Details = styled.p`
@@ -41,7 +46,7 @@ const Details = styled.p`
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
-    max-width: 50%;
+    max-width: 60%;
 
     @media screen and (max-width: 480px) {
       font-size: 18px;

@@ -36,7 +36,7 @@ const ServiceImg = styled.img`
 const DescriptionContainer = styled(Rosa)`
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 55%;
   align-items: center;
 
   @media screen and (max-width: 480px) {
@@ -45,6 +45,19 @@ const DescriptionContainer = styled(Rosa)`
 
 `;
 
+const Title = styled.h2`
+  color: #FFFFFF;
+  font-family: SF TransRobotics;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 10px 0;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    font-size: 36px;
+  }
+`;
 
 const Details = styled.p`
   color: #000000;
@@ -64,15 +77,20 @@ const Details = styled.p`
 
 
 export function OurService(props) {
-const { imgUrl, description1, description2, isReversed } = props;
+const { imgUrl, title, description1, description2, isReversed } = props;
 
   return (
     <ServiceContainer isReversed={isReversed}>
-        <DescriptionContainer animation="zoom-in" duration={200} delay={100}>
+        <DescriptionContainer animation="zoom-in" duration={300} delay={100}>
+          <Title> {title} </Title>
           <Details> {description1} </Details>
           <Details> {description2} </Details>
         </DescriptionContainer>
+        <Rosa animation="zoom-in"
+          duration={300}
+          delay={250}>
         <ServiceImg src={imgUrl} />
+        </Rosa>
     </ServiceContainer>
 
   );
