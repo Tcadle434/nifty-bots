@@ -117,6 +117,7 @@ const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 10px;
 }
 `;
 
@@ -156,7 +157,7 @@ const LogoContainerColumn = styled.div`
   align-items: center;
   flex-direction: column;
   margin-left: 0%;
-  padding-bottom: 75px;
+  padding-bottom: 30px;
 
 }
 `;

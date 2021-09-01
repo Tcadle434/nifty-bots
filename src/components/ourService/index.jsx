@@ -74,7 +74,7 @@ const Details = styled.p`
   @media screen and (max-width: 480px) {
     max-width: 90%;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
 }
 `;
 
