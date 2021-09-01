@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../theme";
+
 import { Element } from "react-scroll";
 import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
@@ -13,7 +15,7 @@ const FeaturesContainer = styled(Element)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(22, 177, 243, 0.5);
+  background: ${theme.primary};
   padding: 10px; 0
 
   @media screen and (max-width: 480px) {

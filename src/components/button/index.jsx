@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 const ButtonWrapper = styled.button`
-  padding: ${({small}) => (small ? "8px 11px " : "16px 22px")};
+  padding: ${({small}) => (small ? "16px 32px " : "16px 22px")};
   border-radius: 5px;
   background-color: transparent;
   color: #FFFFFF;
   font-weight: normal;
-  font-size: ${({small}) => (small ? "24px" : "32px")};
+  font-size: ${({small}) => (small ? "40px" : "50px")};
   font-family: Disposable Droid BB;
     outline: none;
   border: none;
@@ -22,7 +22,9 @@ const ButtonWrapper = styled.button`
   }
 
   @media screen and (max-width: 480px) {
-  font-size: 12px;
+  font-size: 18px;
+  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
+
 }
 `;
 

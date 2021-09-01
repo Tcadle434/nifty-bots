@@ -7,6 +7,7 @@ import { FeaturesSection } from "./featuresSection";
 import { RoadmapSection } from "./roadmapSection";
 import { FooterSection } from "./footerSection";
 import { Marginer } from "../../components/marginer";
+import { ColoredLine } from "../../components/line";
 
 
 const PageContainer = styled.div`
@@ -20,6 +21,7 @@ export function Homepage(props) {
   return(
       <PageContainer>
         <TopSection />
+        <ColoredLine />
         <AboutSection />
         <BotSection />
         <FeaturesSection />

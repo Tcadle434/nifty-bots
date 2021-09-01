@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-import NftLogo from "../../assets/logo/battlebots.jpg";
+import NftLogo from "../../assets/logo/ASRC_logo.png";
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
@@ -11,8 +11,8 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 16em;
-  height: 16em;
+  width: 52em;
+  height: 52em;
 
   ${({inline}) => inline &&
   css`
@@ -22,7 +22,8 @@ const LogoImg = styled.img`
   `};
 
   @media screen and (max-width: 480px) {
-  margin-right: 2px;
+    width: 16em;
+    height: 16em;
 }
 `;
 
