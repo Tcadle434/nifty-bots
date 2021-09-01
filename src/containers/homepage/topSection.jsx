@@ -2,18 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme";
 
-
 import BackgroundImg from "../../assets/pictures/top_background_sized.jpg";
-import BotOne from "../../assets/illustrations/bot1.jpg";
-import BotTwo from "../../assets/illustrations/bot2.jpg";
-import BotThree from "../../assets/illustrations/bot3.jpg";
-import BotFour from "../../assets/illustrations/bot4.jpg";
-
 import BotOneReal from "../../assets/illustrations/hotdog_bot.jpeg";
+
+import BoxingImg from "../../assets/illustrations/boxing_sample.jpg";
+import GymImg from "../../assets/illustrations/gym_sample.jpg";
+import LaserEyeImg from "../../assets/illustrations/laser_eye_sample.jpg";
+import MaskFuckOffImg from "../../assets/illustrations/mask_fuck_off_sample.jpg";
+import NoEyesImg from "../../assets/illustrations/no_eyes_sample.jpg";
+import PickleRickImg from "../../assets/illustrations/pickle_rick_sample.jpg";
+import WizardImg from "../../assets/illustrations/wizard_dont_talk_sample.jpg";
+import ZombieImg from "../../assets/illustrations/zombie_vibes_sample.jpg";
+
 
 
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
+import { Logo } from "../../components/logo";
+
 import { CarouselCard } from "../../components/carouselCard";
 import { Element, scroller } from "react-scroll";
 
@@ -26,7 +32,6 @@ const TopContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding: 0;
-  background-image:url(${BackgroundImg});
   position=relative;
 
   @media screen and (max-width: 480px) {
@@ -37,10 +42,14 @@ const TopContainer = styled.div`
 const BackgroundFilter = styled.div`
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const SloganTextContainer = styled.div`
+  width: 33%;
 `;
 
 const SloganText = styled.h1`
@@ -101,6 +110,8 @@ const CarouselContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  padding-top: 40px;
 
   @media screen and (max-width: 480px) {
   display: flex;
@@ -121,6 +132,35 @@ const CarouselContainerTwo = styled.div`
 }
 `;
 
+const CarouselContainerColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+
+  @media screen and (max-width: 480px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 0%;
+
+}
+`;
+
+const LogoContainerColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+
+  @media screen and (max-width: 480px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 0%;
+  padding-bottom: 75px;
+
+}
+`;
+
 
 export function TopSection(props) {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
@@ -130,26 +170,39 @@ export function TopSection(props) {
     <TopContainer>
       <BackgroundFilter>
       <Navbar />
-        <Marginer direction="vertical" margin="4em" />
-        <SloganText> ANTI SOCIAL </SloganText>
-        <SloganText> ROBOT CLUB </SloganText>
-        <Marginer direction="vertical" margin="4em" />
 
-        <CarouselContainer>
+      <CarouselContainer>
+        <LogoContainerColumn>
+          <Logo/>
+
+        </LogoContainerColumn>
+
+        <CarouselContainerColumn>
           <CarouselContainerTwo>
-          <CarouselCard imgUrl={BotOneReal} />
-          <CarouselCard imgUrl={BotOneReal} />
+            <CarouselCard imgUrl={BoxingImg} />
+            <CarouselCard imgUrl={GymImg} />
+            <CarouselCard imgUrl={LaserEyeImg} />
           </CarouselContainerTwo>
           <CarouselContainerTwo>
-          <CarouselCard imgUrl={BotOneReal} />
-          <CarouselCard imgUrl={BotOneReal} />
+            <CarouselCard imgUrl={BotOneReal} />
+            <CarouselCard imgUrl={MaskFuckOffImg} />
+            <CarouselCard imgUrl={NoEyesImg} />
           </CarouselContainerTwo>
-        </CarouselContainer>
+          <CarouselContainerTwo>
+            <CarouselCard imgUrl={WizardImg} />
+            <CarouselCard imgUrl={ZombieImg} />
+            <CarouselCard imgUrl={PickleRickImg} />
+          </CarouselContainerTwo>
+        </CarouselContainerColumn>
 
-        <Marginer direction="vertical" margin="4em" />
-        <Typist>
-          <MintText> Minting Soon on Solana...</MintText>
-        </Typist>
+      </CarouselContainer>
+
+      <Marginer direction="vertical" margin="4em" />
+
+
+      <Typist>
+        <MintText> Minting Soon on Solana...</MintText>
+      </Typist>
 
       </BackgroundFilter>
     </TopContainer>

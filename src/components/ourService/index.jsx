@@ -15,6 +15,7 @@ const ServiceContainer = styled.div`
   flex-direction: ${({ isReversed }) => isReversed && "row-reverse"};
   margin-bottom: 2em;
   data-aos: fade-up;
+  width: 60%;
 
   @media screen and (max-width: 480px) {
   justify-content: center;
@@ -24,12 +25,12 @@ const ServiceContainer = styled.div`
 `;
 
 const ServiceImg = styled.img`
-  width: 45em;
-  height: 30em;
+width: 30em;
+height: 40em;
 
   @media screen and (max-width: 480px) {
-  width: 20em;
-  height: 13em;
+  width: 12em;
+  height: 16em;
 }
 `;
 
@@ -60,13 +61,15 @@ const Title = styled.h2`
 `;
 
 const Details = styled.p`
-  color: #000000;
+  color: #FFFFFF;
   font-family: Disposable Droid BB;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   text-align: center;
   max-width: 80%;
+
+  font-color: ${({ isReversed }) => isReversed && "#FFFFFF"};
 
   @media screen and (max-width: 480px) {
     max-width: 90%;

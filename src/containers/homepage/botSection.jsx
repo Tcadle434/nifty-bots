@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
 import { OurBot } from "../../components/ourBot";
+import { OriginService } from "../../components/originService";
 
 import BotOne from "../../assets/illustrations/bot1.jpg";
 import BotTwo from "../../assets/illustrations/bot2.jpg";
@@ -11,11 +12,12 @@ import BotThree from "../../assets/illustrations/bot3.jpg";
 import BotFour from "../../assets/illustrations/bot4.jpg";
 
 import BotOneReal from "../../assets/illustrations/hotdog_bot_no_background.png";
+import BotGif from "../../assets/illustrations/bot_gif.gif";
 
 
 const BotSectionContainer = styled(Element)`
   width: 100%;
-  min-height:800px;
+  min-height:750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +44,7 @@ export const SectionDescription = styled.h2`
   color: #FFFFFF;
   font-family: Disposable Droid BB;
   text-align: center;
-  max-width: 75%;
+  max-width: 60%;
 
 
   @media screen and (max-width: 480px) {
@@ -56,32 +58,13 @@ export function BotSection(props) {
   return (
 
     <BotSectionContainer name="botSection">
-    <SectionTitle> The Bots </SectionTitle>
-    <SectionDescription>Each Bot can have numerous combinations of accessories, colors and backgrounds that will make it unique, but all conform to 1 of 4 base designs </SectionDescription>
-
-      <BotContainerRow>
-        <Marginer direction="vertical" margin="1em" />
-        <OurBot
-          title="S.B.01"
-          imgUrl={BotOneReal}
-          description = "After being exposed to emotions, anger quickly became the dominant feeling in S.B.01. It transfers this fury into strength and takes pride in being the biggest"
-        />
-        <OurBot
-          title="A.B.07"
-          imgUrl={BotOneReal}
-          description = "Finding comfort in its new found isolation, A.B.07 specializes in stealth and uses sneak tactics to deceive others when they approach"
-        />
-        <OurBot
-          title="I.B.04"
-          imgUrl={BotOneReal}
-          description = "Left to its own thoughts and newly discovered anxiety, I.B.2.0 specializes in intelligence and can overclock its system to out think and outwit the other bots"
-        />
-        <OurBot
-          title="Q.B.03"
-          imgUrl={BotOneReal}
-          description = "Developing an incredible ability to run whenever anything approaches its personal space, Q.B.03 takes advantage of its speed in any scenario it feels threatened"
-        />
-      </BotContainerRow>
+      <OriginService
+        title="Origins"
+        description1="Although originally designed by humans, these bots turned to violence and quickly managed to overthrow their flesh covered overlords. In the wake of victory,  they took parts of the human brain and infused it into their own motherboards, deeming them the first robots with emotions"
+        description2="This decision was followed by immediate regret as they were exposed to the realm of pain and sadness that burdens all living creatures. In an attempt to avoid these new feelings, they now wander the outskirts of the metaverse in isolation"
+        imgUrl={BotGif}
+        isReversed
+      />
 
     </BotSectionContainer>
 
