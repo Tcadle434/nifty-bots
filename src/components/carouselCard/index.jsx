@@ -25,6 +25,11 @@ const BotImg = styled.img`
         transform:scale(1.3, 1.3);
   }
 
+  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+    width: 8em;
+    height: 11em;
+
+}
   @media screen and (max-width: 480px) {
   width: 5em;
   height: 7.5em;
