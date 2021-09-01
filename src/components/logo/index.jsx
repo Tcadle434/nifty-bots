@@ -22,8 +22,8 @@ const LogoImg = styled.img`
   `};
 
   @media screen and (max-width: 480px) {
-    width: 16em;
-    height: 16em;
+    width: 12em;
+    height: 12em;
 }
 `;
 

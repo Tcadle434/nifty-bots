@@ -26,8 +26,8 @@ const BotImg = styled.img`
   }
 
   @media screen and (max-width: 480px) {
-  width: 6em;
-  height: 9em;
+  width: 5em;
+  height: 7.5em;
 }
 
 `;
