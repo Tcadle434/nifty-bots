@@ -21,10 +21,16 @@ const LogoImg = styled.img`
   margin-right: 6px;
   `};
 
+  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+    width: 32em;
+    height: 32em;
+
+  }
   @media screen and (max-width: 480px) {
     width: 12em;
     height: 12em;
 }
+
 `;
 
 const LogoText = styled.div`

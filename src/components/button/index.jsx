@@ -21,11 +21,18 @@ const ButtonWrapper = styled.button`
     color: #FFFFFF;
   }
 
+  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+  font-size: 24px;
+  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
+
+}
+
   @media screen and (max-width: 480px) {
   font-size: 18px;
   padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
 
 }
+
 `;
 
 export function Button(props) {
