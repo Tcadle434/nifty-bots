@@ -9,9 +9,12 @@ import Bounce from 'react-reveal/Bounce';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Feature1Img from "../../assets/illustrations/snip-penc.PNG";
-
-import AboutImg from "../../assets/illustrations/face-off.jfif";
-
+import FirstBotRight from "../../assets/illustrations/boxing_sample_rotate_20.png";
+import FirstBotLeft from "../../assets/illustrations/boxing_sample_rotate_negative_20.png";
+import { GrMoney } from "react-icons/gr";
+import { FaRobot, FaGem, FaTshirt } from "react-icons/fa";
+import { IoLogoGameControllerB } from "react-icons/io";
+import { GiToyMallet } from "react-icons/gi";
 
 const RoadmapContainer = styled(Element)`
   width: 100%;
@@ -31,14 +34,10 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
     box-shadow: none!important;
   }
 
-`;
-
-const TimelineImg = styled.img`
-  width: 5em;
-  height: 5em;
-  align-items: center;
+  .vertical-timeline-element-icon svg {
 
 `;
+
 
 const DetailsHeader = styled.h3`
   font-family: SF TransRobotics;
@@ -59,6 +58,57 @@ const Details = styled.p`
     }
 `;
 
+const RobotRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const RobotImgLeft = styled.img`
+  width: 11em;
+  height: 15em;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: 3em;
+    height: 4em;
+  }
+
+`;
+const RobotImgRight = styled.img`
+  width: 12em;
+  height: 15em;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: 5em;
+    height: 7em;
+  }
+
+`;
+
+const RobotImg = styled(FaRobot)`
+  color: #000000!important;
+`;
+
+const MoneyImg = styled(GrMoney)`
+`;
+
+const RareImg = styled(FaGem)`
+  color: #000000!important;
+`;
+
+const MerchImg = styled(FaTshirt)`
+  color: #000000!important;
+`;
+
+const GameImg = styled(IoLogoGameControllerB)`
+  color: #000000!important;
+`;
+
+const VoteImg = styled(GiToyMallet)`
+  color: #000000!important;
+`;
 
 export function RoadmapSection(props) {
   return (
@@ -69,8 +119,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<RobotImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">Bots, Roll Out</DetailsHeader>
           <Details>
@@ -81,8 +132,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<MoneyImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">Rewards</DetailsHeader>
           <Details>
@@ -93,8 +145,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<RareImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">Rarities Released</DetailsHeader>
           <Details>
@@ -105,8 +158,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<MerchImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">Merch Drop</DetailsHeader>
           <Details>
@@ -117,8 +171,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<GameImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">Game Development</DetailsHeader>
           <Details>
@@ -129,8 +184,9 @@ export function RoadmapSection(props) {
         <StyledVerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  #16B1F3)' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<VoteImg />}
         >
           <DetailsHeader className="vertical-timeline-element-title">You Tell Us</DetailsHeader>
           <Details>
@@ -139,6 +195,15 @@ export function RoadmapSection(props) {
         </StyledVerticalTimelineElement>
 
       </VerticalTimeline>
+
+      <RobotRow>
+          <RobotImgLeft src={FirstBotRight} />
+          <RobotImgRight src={FirstBotLeft} />
+          <RobotImgLeft src={FirstBotRight} />
+          <RobotImgRight src={FirstBotLeft} />
+          <RobotImgLeft src={FirstBotRight} />
+          <RobotImgRight src={FirstBotLeft} />
+      </RobotRow>
 
     </RoadmapContainer>
 

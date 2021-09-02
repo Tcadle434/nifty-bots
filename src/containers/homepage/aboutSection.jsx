@@ -31,7 +31,7 @@ export function AboutSection(props) {
       <OurService
         title="Welcome"
         description1="Welcome my fellow introverts to the A.S.R.C (Anti Social Robot Club), a collection of 10,000 NFTs on the Solana Blockchin. These digital collectibles grant access to the least competent club on the internet and the perks that result in teaming up with a bunch of hermits"
-        description2="These benefits include exclusive airdrops to Bot owners, potential merch and more. As a member, you will have a vote in the future development of the community and how we grow. Most importantly, you will have a voice in establishing the mechanics of the first Play-to-Earn battle game on SOL, exclusively for members of the A.S.R.C"
+        description2="As a member, you will have a vote in the future development of the community and how we grow. Most importantly, you will have a voice in establishing the mechanics of the first Play-to-Earn battle game on SOL, exclusively for members of the A.S.R.C"
         imgUrl={PeaceGraphic}
       />
     </AboutContainer>

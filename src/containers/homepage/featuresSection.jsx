@@ -5,9 +5,12 @@ import { theme } from "../../theme";
 import { Element } from "react-scroll";
 import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
-import { OurFeature } from "../../components/ourFeature";
+import { OurFeaturePen, OurFeatureToken, OurFeatureAvatar, OurFeatureVoice, OurFeaturePrice, OurFeatureBrain } from "../../components/ourFeature";
+
 
 import Feature1Img from "../../assets/illustrations/snip-penc.PNG";
+
+import { ImPencil2 } from "react-icons/im";
 
 const FeaturesContainer = styled(Element)`
   width: 100%;
@@ -37,42 +40,39 @@ const FeatureContainerRow = styled.div`
 }
 `;
 
+const PencilImg = styled(ImPencil2)`
+  color: #FFFFFF!important;
+`;
+
 export function FeaturesSection(props) {
   return (
 
     <FeaturesContainer name="featuresSection">
     <SectionTitle> Features </SectionTitle>
       <FeatureContainerRow>
-        <OurFeature
+        <OurFeaturePen
           description="Each Anti Social Bot and attribute was drawn by hand before being programmatically combined"
-          imgUrl={Feature1Img}
         />
-        <OurFeature
+       <OurFeatureToken
           description="Purchase of a Bot gives you access to the A.S.R.C and complete ownership over the token"
-          imgUrl={Feature1Img}
         />
-        <OurFeature
+      <OurFeatureAvatar
           description="Awesome avatars to use as PFPs for your metaverse identity"
-          imgUrl={Feature1Img}
         />
       </FeatureContainerRow>
 
 
       <FeatureContainerRow>
-        <OurFeature
+        <OurFeatureVoice
           description="Community driven. Have a say in the development of the game and future A.S.R.C decisions"
-          imgUrl={Feature1Img}
         />
-        <OurFeature
+      <OurFeaturePrice
           description="Cheap mint cost. All Anti Social Bots will be three SOL on drop to give everyone a fair chance"
-          imgUrl={Feature1Img}
         />
-        <OurFeature
+      <OurFeatureBrain
           description="Dedicated and active developers who are excited to explore the depths of the SOL blockchain"
-          imgUrl={Feature1Img}
         />
       </FeatureContainerRow>
-
     </FeaturesContainer>
 
   );

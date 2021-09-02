@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
+import { ImPencil2 } from "react-icons/im";
+import { GiToken, GiVote, GiReceiveMoney, GiBrain } from "react-icons/gi";
+import { BsPersonFill } from "react-icons/bs";
 
 const FeatureContainer = styled.div`
   display: flex;
@@ -20,9 +23,7 @@ const FeatureContainer = styled.div`
 
 
 const FeatureImg = styled.img`
-  width: 5em;
-  height: 5em;
-  align-items: center;
+
 
 `;
 
@@ -43,13 +44,114 @@ const Details = styled.p`
     }
 `;
 
+const PencilImg = styled(ImPencil2)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
 
-export function OurFeature(props) {
-const { imgUrl, description } = props;
+const TokenImg = styled(GiToken)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
+
+const AvatarImg = styled(BsPersonFill)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
+
+const VoteImg = styled(GiVote)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
+
+const MintImg = styled(GiReceiveMoney)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
+
+const BrainImg = styled(GiBrain)`
+  color: #FFFFFF!important;
+  height: 4em;
+  width: 4em;
+  padding-top: 15px;
+`;
+
+export function OurFeaturePen(props) {
+const { description } = props;
 
   return (
         <FeatureContainer>
-        <FeatureImg src={imgUrl} />
+        <PencilImg />
+        <Details> {description} </Details>
+        </FeatureContainer>
+  );
+
+}
+
+export function OurFeatureToken(props) {
+const { description } = props;
+
+  return (
+        <FeatureContainer>
+        <TokenImg />
+        <Details> {description} </Details>
+        </FeatureContainer>
+  );
+
+}
+
+export function OurFeatureAvatar(props) {
+const { description } = props;
+
+  return (
+        <FeatureContainer>
+        <AvatarImg />
+        <Details> {description} </Details>
+        </FeatureContainer>
+  );
+
+}
+
+export function OurFeatureVoice(props) {
+const { description } = props;
+
+  return (
+        <FeatureContainer>
+        <VoteImg />
+        <Details> {description} </Details>
+        </FeatureContainer>
+  );
+
+}
+
+export function OurFeaturePrice(props) {
+const { description } = props;
+
+  return (
+        <FeatureContainer>
+        <MintImg />
+        <Details> {description} </Details>
+        </FeatureContainer>
+  );
+
+}
+
+export function OurFeatureBrain(props) {
+const { description } = props;
+
+  return (
+        <FeatureContainer>
+        <BrainImg />
         <Details> {description} </Details>
         </FeatureContainer>
   );
