@@ -4,7 +4,9 @@ import { Element } from "react-scroll";
 import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
 import { ColoredLine } from "../../components/line";
+import { Button } from "../../components/button";
 import { theme } from "../../theme";
+import { Link } from 'react-router-dom';
 
 import DiscordImg from "../../assets/illustrations/discord.png";
 import TwitterImg from "../../assets/illustrations/twitter.png";
@@ -50,8 +52,8 @@ const Details = styled.p`
 `;
 
 const SocialMediaImg = styled.img`
-  width: 10em;
-  height: 8em;
+  width: 12em;
+  height: 9em;
 
   @media screen and (max-width: 480px) {
   width: 6em;
@@ -59,19 +61,39 @@ const SocialMediaImg = styled.img`
 }
 `;
 
-const MediumImgContainer = styled.img`
-  width: 8em;
-  height: 8em;
-
-  @media screen and (max-width: 480px) {
-  width: 4em;
-  height: 4em;
-}
-`;
 
 const SocialMediaRow = styled.div`
   display: flex;
   flex-direction: row;
+`;
+
+const ButtonWrap = styled.button`
+  align-items: center;
+  color: transparent;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: all 220ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+    transform:scale(1.3, 1.3);
+
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+  font-size: 24px;
+  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
+
+}
+
+  @media screen and (max-width: 480px) {
+  font-size: 18px;
+  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
+
+}
+
 `;
 
 
@@ -82,13 +104,18 @@ export function FooterSection(props) {
       <FooterTitle>
         Follow Us
       </FooterTitle>
-      <Details> © 2021 | Anti Social Robot Club </Details>
-      <Marginer direction="vertical" margin="1em" />
 
       <SocialMediaRow>
-        <SocialMediaImg src={DiscordImg} />
-        <SocialMediaImg src={TwitterImg} />
-        <SocialMediaImg src={MediumImg} />
+        <ButtonWrap>
+          <a href="https://twitter.com/AntiSocialBots">
+          <SocialMediaImg src={DiscordImg} />
+          </a>
+        </ButtonWrap>
+        <ButtonWrap>
+          <a href="https://twitter.com/AntiSocialBots">
+          <SocialMediaImg src={TwitterImg} />
+          </a>
+        </ButtonWrap>
       </SocialMediaRow>
     </FooterContainer>
 
