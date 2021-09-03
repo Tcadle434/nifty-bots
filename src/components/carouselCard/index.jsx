@@ -17,22 +17,45 @@ const CardContainer = styled.div`
 `;
 
 const BotImg = styled.img`
-  width: 13em;
-  height: 18em;
+  width: 11em;
+  height: 14.5em;
   transition: transform .2s; /* Animation */
 
   &:hover {
         transform:scale(1.3, 1.3);
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+  @media screen and (min-width: 1281px) and (max-width: 1680px) {
     width: 8em;
     height: 11em;
 
 }
-  @media screen and (max-width: 480px) {
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  width: 6em;
+  height: 8em;
+
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
   width: 5em;
-  height: 7.5em;
+  height: 6.5em;
+
+}
+
+  @media screen and (max-width: 480px) {
+  width: 4.5em;
+  height: 6em;
+}
+
+@media screen and (max-width: 480px) and (max-height: 660px) {
+  width: 4.5em;
+  height: 6em;
+}
+
+@media screen and (max-width: 480px) and (max-height: 600px) {
+  width: 3.5em;
+  height: 4.5em;
 }
 
 `;
