@@ -1,0 +1,31 @@
+.wallet {
+  padding: 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: Disposable Droid BB;
+  outline: none;
+  border: none;
+  transition: all 220ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(22, 177, 243, 0.5);
+    border: none;
+    color: #FFFFFF;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+  font-size: 24px;
+  padding: 16px;
+
+}
+
+  @media screen and (max-width: 480px) {
+  font-size: 18px;
+  padding: 16px;
+
+}
+}

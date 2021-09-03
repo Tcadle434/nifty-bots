@@ -12,7 +12,7 @@ import BotThree from "../../assets/illustrations/bot3.jpg";
 import BotFour from "../../assets/illustrations/bot4.jpg";
 
 import BotOneReal from "../../assets/illustrations/hotdog_bot_no_background.png";
-import BotGif from "../../assets/illustrations/bot_gif.gif";
+import BotGifNew from "../../assets/illustrations/bot_gif_new.gif";
 
 
 const BotSectionContainer = styled(Element)`
@@ -62,7 +62,7 @@ export function BotSection(props) {
         title="Origins"
         description1="Although originally designed by humans, these bots turned to violence and quickly managed to overthrow their flesh covered overlords. In the wake of victory,  they took parts of the human brain and infused it into their own motherboards, deeming them the first robots with emotions"
         description2="This decision was followed by immediate regret as they were exposed to the realm of pain and sadness that burdens all living creatures. In an attempt to avoid these new feelings, they now wander the outskirts of the metaverse in isolation"
-        imgUrl={BotGif}
+        imgUrl={BotGifNew}
         isReversed
       />
 

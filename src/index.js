@@ -4,13 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AOS from "aos";
+import { ConfigureStore } from './store/ConfigureStore.js';
+import { Provider } from 'react-redux';
+import HttpsRedirect from 'react-https-redirect';
 
 AOS.init();
+const store = ConfigureStore();
 
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

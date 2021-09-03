@@ -107,9 +107,7 @@ export function FooterSection(props) {
 
       <SocialMediaRow>
         <ButtonWrap>
-          <a href="https://twitter.com/AntiSocialBots">
           <SocialMediaImg src={DiscordImg} />
-          </a>
         </ButtonWrap>
         <ButtonWrap>
           <a href="https://twitter.com/AntiSocialBots">
