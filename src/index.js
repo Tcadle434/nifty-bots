@@ -13,10 +13,12 @@ const store = ConfigureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </Provider>,
+      <HttpsRedirect>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+      </HttpsRedirect>
+    </Provider>,
   document.getElementById('root')
 );
 
