@@ -11,8 +11,8 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 52em;
-  height: 52em;
+  width: 42em;
+  height: 42em;
 
   ${({inline}) => inline &&
   css`
@@ -21,14 +21,31 @@ const LogoImg = styled.img`
   margin-right: 6px;
   `};
 
-  @media screen and (min-width: 1024px) and (max-width: 1680px) {
+  @media screen and (min-width: 1281px) and (max-width: 1680px) {
     width: 32em;
     height: 32em;
 
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 24em;
+    height: 24em;
+
+  }
+
   @media screen and (max-width: 480px) {
-    width: 12em;
-    height: 12em;
+    width: 10em;
+    height: 10em;
+}
+
+@media screen and (max-width: 480px) and (max-height: 660px) {
+  width: 8em;
+  height: 8em;
+}
+
+@media screen and (max-width: 480px) and (max-height: 600px) {
+  width: 6.5em;
+  height: 6.5em;
 }
 
 `;
