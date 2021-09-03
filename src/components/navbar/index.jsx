@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 import { Logo } from "../logo";
 import { Button } from "../button";
+import { Wallet } from "../Wallet";
 import { Marginer } from "../../components/marginer";
 import { Element, scroller } from "react-scroll";
 

@@ -16,6 +16,11 @@ import { FaRobot, FaGem, FaTshirt } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { GiToyMallet } from "react-icons/gi";
 
+import BotOneImg from "../../assets/illustrations/bot_1.png";
+import BotTwoImg from "../../assets/illustrations/bot_2.png";
+import BotThreeImg from "../../assets/illustrations/bot_3.png";
+import BotFourImg from "../../assets/illustrations/bot_4.png";
+
 const RoadmapContainer = styled(Element)`
   width: 100%;
   min-height: 1600px;
@@ -64,25 +69,16 @@ const RobotRow = styled.div`
   align-items: center;
 `;
 
-const RobotImgLeft = styled.img`
+const BaseRobotImg = styled.img`
   width: 11em;
   height: 15em;
   align-items: center;
+  margin: 40px;
 
   @media screen and (max-width: 480px) {
     width: 3em;
     height: 4em;
-  }
-
-`;
-const RobotImgRight = styled.img`
-  width: 12em;
-  height: 15em;
-  align-items: center;
-
-  @media screen and (max-width: 480px) {
-    width: 5em;
-    height: 7em;
+    margin: 20px;
   }
 
 `;
@@ -197,12 +193,11 @@ export function RoadmapSection(props) {
       </VerticalTimeline>
 
       <RobotRow>
-          <RobotImgLeft src={FirstBotRight} />
-          <RobotImgRight src={FirstBotLeft} />
-          <RobotImgLeft src={FirstBotRight} />
-          <RobotImgRight src={FirstBotLeft} />
-          <RobotImgLeft src={FirstBotRight} />
-          <RobotImgRight src={FirstBotLeft} />
+          <BaseRobotImg src={BotOneImg} />
+          <BaseRobotImg src={BotTwoImg} />
+          <BaseRobotImg src={BotThreeImg} />
+          <BaseRobotImg src={BotFourImg} />
+
       </RobotRow>
 
     </RoadmapContainer>
