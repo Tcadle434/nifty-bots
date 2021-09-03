@@ -67,7 +67,7 @@ export function FeaturesSection(props) {
           description="Community driven. Have a say in the development of the game and future A.S.R.C decisions"
         />
       <OurFeaturePrice
-          description="Cheap mint cost. All Anti Social Bots will be three SOL on drop to give everyone a fair chance"
+          description="Cheap mint cost. All Anti Social Bots will be 2 SOL on drop to give everyone a fair chance"
         />
       <OurFeatureBrain
           description="Dedicated and active developers who are excited to explore the depths of the SOL blockchain"
