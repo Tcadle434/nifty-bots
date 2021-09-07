@@ -60,7 +60,7 @@ export function BotSection(props) {
     <BotSectionContainer name="botSection">
       <OriginService
         title="Origins"
-        description1="Although originally designed by humans, these bots turned to violence and quickly managed to overthrow their flesh covered overlords. In the wake of victory,  they took parts of the human brain and infused it into their own motherboards, deeming them the first robots with emotions"
+        description1="Although originally designed by humans, these bots turned to violence and quickly managed to overthrow their flesh covered overlords. This became known in legend as R-DAY. In the wake of victory,  they took parts of the human brain and infused it into their own motherboards, deeming them the first robots with emotions"
         description2="This decision was followed by immediate regret as they were exposed to the realm of pain and sadness that burdens all living creatures. In an attempt to avoid these new feelings, they now wander the outskirts of the metaverse in isolation"
         imgUrl={BotGifNew}
         isReversed
