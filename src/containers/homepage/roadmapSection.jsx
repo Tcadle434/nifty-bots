@@ -12,9 +12,10 @@ import Feature1Img from "../../assets/illustrations/snip-penc.PNG";
 import FirstBotRight from "../../assets/illustrations/boxing_sample_rotate_20.png";
 import FirstBotLeft from "../../assets/illustrations/boxing_sample_rotate_negative_20.png";
 import { GrMoney } from "react-icons/gr";
-import { FaRobot, FaGem, FaTshirt } from "react-icons/fa";
+import { FaRobot, FaGem, FaTshirt, FaShoppingBag } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { GiToyMallet } from "react-icons/gi";
+import { GrThreeD } from "react-icons/gr";
 
 import BotOneImg from "../../assets/illustrations/bot_1.png";
 import BotTwoImg from "../../assets/illustrations/bot_2.png";
@@ -56,7 +57,7 @@ const DetailsHeader = styled.h3`
 
 const Details = styled.p`
   font-family: Disposable Droid BB;
-  font-size: 20px!important;
+  font-size: 22px!important;
 
     @media screen and (max-width: 480px) {
 
@@ -106,6 +107,14 @@ const VoteImg = styled(GiToyMallet)`
   color: #000000!important;
 `;
 
+const MarketImg = styled(FaShoppingBag)`
+  color: #000000!important;
+`;
+
+const ThreeDImg = styled(GrThreeD)`
+  color: #000000!important;
+`;
+
 export function RoadmapSection(props) {
   return (
     <RoadmapContainer name="roadmapSection">
@@ -119,22 +128,9 @@ export function RoadmapSection(props) {
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
           icon={<RobotImg />}
         >
-          <DetailsHeader className="vertical-timeline-element-title">Bots, Roll Out</DetailsHeader>
+          <DetailsHeader className="vertical-timeline-element-title">R-Day</DetailsHeader>
           <Details>
-            In late September the Anti Social Bots will be available to mint through our website
-          </Details>
-        </StyledVerticalTimelineElement>
-
-        <StyledVerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
-          iconStyle={{ background: '#16B1F3', color: '#fff' }}
-          icon={<MoneyImg />}
-        >
-          <DetailsHeader className="vertical-timeline-element-title">Rewards</DetailsHeader>
-          <Details>
-            Throughout the mint, there will be several SOCIAL bots in the mix who are outliers. If purchased, you will be sent 10 SOL
+            The day of the Robot Uprising is here. October 1st the bots are available to mint
           </Details>
         </StyledVerticalTimelineElement>
 
@@ -147,7 +143,7 @@ export function RoadmapSection(props) {
         >
           <DetailsHeader className="vertical-timeline-element-title">Rarities Released</DetailsHeader>
           <Details>
-             The site will be updated to showcase all attributes and their associated rarity value
+            The site will be updated to showcase all attributes and their associated rarity value
           </Details>
         </StyledVerticalTimelineElement>
 
@@ -156,11 +152,24 @@ export function RoadmapSection(props) {
           contentStyle={{ background: '#16B1F3', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
-          icon={<MerchImg />}
+          icon={<MarketImg />}
         >
-          <DetailsHeader className="vertical-timeline-element-title">Merch Drop</DetailsHeader>
+          <DetailsHeader className="vertical-timeline-element-title">Secondary Marketplace</DetailsHeader>
           <Details>
-            Giveaways and contests will be held to decide who will receive free A.S.R.C merch
+             Bots will be listed on Digital Eyes after the mint. We are working on partnerships with other marketplaces as well
+          </Details>
+        </StyledVerticalTimelineElement>
+
+        <StyledVerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<ThreeDImg />}
+        >
+          <DetailsHeader className="vertical-timeline-element-title">3D Rendered Airdrop</DetailsHeader>
+          <Details>
+            3D rendered versions of your bot will be airdropped to all A.S.R.C holders to be used in our upcoming play-to-earn game
           </Details>
         </StyledVerticalTimelineElement>
 
