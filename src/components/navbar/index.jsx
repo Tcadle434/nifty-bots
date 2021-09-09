@@ -56,9 +56,11 @@ export function Navbar(props) {
   return (
     <NavbarContainer>
       <AccessibilityContainer>
-        <Button small>
-        <Wallet />
-        </Button>
+        <Button small onClick={scrollToAboutSection}> About </Button>
+        <Marginer direction="horizontal" margin="16px" />
+        <Button small onClick={scrollToFeaturesSection}> Features </Button>
+        <Marginer direction="horizontal" margin="16px" />
+        <Button small onClick={scrollToRoadmapSection}> Roadmap </Button>
       </AccessibilityContainer>
     </NavbarContainer>
   );
