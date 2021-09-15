@@ -17,9 +17,11 @@ import ZombieImg from "../../assets/illustrations/zombie_vibes_sample.jpg";
 import BotTwoLasso from "../../assets/illustrations/bot_2_lasso_fingergun.jpg";
 import BotTwoPopsicle from "../../assets/illustrations/bot_2_popsicle_glasses.jpg";
 import BotTwoEyebrows from "../../assets/illustrations/bot_2_eyebrows.jpg";
-
+import BotPizza from "../../assets/illustrations/pizza.jpg";
+import NinjaBot from "../../assets/illustrations/ninja.png";
+import CoolTankBot from "../../assets/illustrations/cool_tank.png";
 import BotThreeLightsaber from "../../assets/illustrations/bot_3_lightsaber_beer.png";
-import BotThreeHair from "../../assets/illustrations/bot_3_hair_stop.png";
+import BotGenius from "../../assets/illustrations/genius.jpg";
 
 import BotFourEmo from "../../assets/illustrations/bot_4_emo.png";
 import BotHotdog from "../../assets/illustrations/bot_4_hotdog.png";
@@ -189,19 +191,19 @@ export function TopSection(props) {
 
         <CarouselContainerColumn>
           <CarouselContainerTwo>
-            <CarouselCard imgUrl={BotTwoLasso} />
+            <CarouselCard imgUrl={BotPizza} />
             <CarouselCard imgUrl={LaserEyeImg} />
-            <CarouselCard imgUrl={BotFourEmo} />
+            <CarouselCard imgUrl={NinjaBot} />
           </CarouselContainerTwo>
           <CarouselContainerTwo>
             <CarouselCard imgUrl={BotHotdog} />
             <CarouselCard imgUrl={BotTwoEyebrows} />
-            <CarouselCard imgUrl={BotThreeHair} />
+            <CarouselCard imgUrl={BotGenius} />
           </CarouselContainerTwo>
           <CarouselContainerTwo>
             <CarouselCard imgUrl={BoxingImg} />
             <CarouselCard imgUrl={BotThreeLightsaber} />
-            <CarouselCard imgUrl={MaskFuckOffImg} />
+            <CarouselCard imgUrl={CoolTankBot} />
           </CarouselContainerTwo>
         </CarouselContainerColumn>
 
