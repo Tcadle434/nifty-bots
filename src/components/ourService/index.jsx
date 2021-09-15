@@ -18,6 +18,7 @@ const ServiceContainer = styled.div`
   width: 60%;
 
   @media screen and (max-width: 480px) {
+    width: 100%;
   justify-content: center;
   flex-direction: column;
 }

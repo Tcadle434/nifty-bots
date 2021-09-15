@@ -12,7 +12,7 @@ import BotThree from "../../assets/illustrations/bot3.jpg";
 import BotFour from "../../assets/illustrations/bot4.jpg";
 
 import BotOneReal from "../../assets/illustrations/hotdog_bot_no_background.png";
-import BotGifNew from "../../assets/illustrations/bot_gif_new.gif";
+import BotGifNew from "../../assets/illustrations/new_site.gif";
 
 
 const BotSectionContainer = styled(Element)`

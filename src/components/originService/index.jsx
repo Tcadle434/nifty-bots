@@ -16,6 +16,8 @@ const ServiceContainer = styled.div`
   margin-bottom: 2em;
   data-aos: fade-up;
   width: 60%;
+  width: 100%;
+
 
   @media screen and (max-width: 480px) {
   justify-content: center;
