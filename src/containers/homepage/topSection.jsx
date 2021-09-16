@@ -213,7 +213,7 @@ export function TopSection(props) {
 
 
       <Typist>
-        <MintText> Minting Soon on Solana...</MintText>
+        <MintText> Minting October 1st on Solana...</MintText>
       </Typist>
 
       </BackgroundFilter>
