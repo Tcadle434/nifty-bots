@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family:'Share Tech Mono';
+  src: local('Share Tech Mono'), url(./fonts/ShareTechMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
   font-family:'Disposable Droid BB';
   src: local('Disposable Droid BB'), url(./fonts/DisposableDroidBB.ttf) format('truetype');
 }

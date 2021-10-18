@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { TopSection } from "./topSection";
 import { AboutSection } from "./aboutSection";
-import { BotSection } from "./botSection";
+import { TeamSection } from "./teamSection";
 import { FeaturesSection } from "./featuresSection";
 import { RoadmapSection } from "./roadmapSection";
 import { FooterSection } from "./footerSection";
@@ -23,8 +23,7 @@ export function Homepage(props) {
         <TopSection />
         <ColoredLine />
         <AboutSection />
-        <BotSection />
-        <FeaturesSection />
+        <TeamSection />
         <RoadmapSection />
         <FooterSection />
       </PageContainer>

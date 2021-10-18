@@ -5,6 +5,8 @@ import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
 import { ColoredLine } from "../../components/line";
 import { Button } from "../../components/button";
+import { Logo } from "../../components/logo";
+
 import { theme } from "../../theme";
 import { Link } from 'react-router-dom';
 
@@ -19,14 +21,26 @@ const FooterContainer = styled(Element)`
   flex-direction: column;
   align-items: center;
   background: #000000;
-  padding: 10px; 0
+`;
+
+const FooterRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const FooterSubContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33.33%;
+  padding: 10px 150px;
 `;
 
 const FooterTitle = styled.h1`
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 500;
   color: ${theme.primary};
-  font-family: SF TransRobotics;
+  font-family: Share Tech Mono;
   text-align: center;
 
 
@@ -39,15 +53,28 @@ const FooterTitle = styled.h1`
 const Details = styled.p`
   color: #FFFFFF;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
+  font-family: Share Tech Mono;
   text-align: center;
-  max-width: 50%;
+  max-width: 90%;
 
   @media screen and (max-width: 480px) {
-    max-width: 90%;
-    width: 100%;
-    font-size: 14px;
+
+}
+`;
+
+const Marketplaces = styled.p`
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Share Tech Mono;
+  text-align: center;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  @media screen and (max-width: 480px) {
+
 }
 `;
 
@@ -83,14 +110,10 @@ const ButtonWrap = styled.button`
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1680px) {
-  font-size: 24px;
-  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
 
 }
 
   @media screen and (max-width: 480px) {
-  font-size: 18px;
-  padding: ${({small}) => (small ? "16px 20px " : "16px 22px")};
 
 }
 
@@ -101,22 +124,57 @@ export function FooterSection(props) {
   return (
     <FooterContainer>
     <ColoredLine />
-      <FooterTitle>
-        Follow Us
-      </FooterTitle>
+    <FooterRow>
+      <FooterSubContainer>
+        <FooterTitle> Follow Us </FooterTitle>
+          <ButtonWrap>
+            <a href = "https://discord.gg/Vk26nVgTMk">
+            <SocialMediaImg src={DiscordImg} />
+            </a>
+          </ButtonWrap>
+          <ButtonWrap>
+            <a href="https://twitter.com/AntiSocialBots">
+            <SocialMediaImg src={TwitterImg} />
+            </a>
+          </ButtonWrap>
+        </FooterSubContainer>
 
-      <SocialMediaRow>
-        <ButtonWrap>
-          <a href = "https://discord.gg/Vk26nVgTMk">
-          <SocialMediaImg src={DiscordImg} />
+        <FooterSubContainer>
+          <FooterTitle>  </FooterTitle>
+          <Logo />
+          <FooterTitle>  </FooterTitle>
+          <Details> ©2021, Anti Social Robot Club. All Rights Reserved </Details>
+        </FooterSubContainer>
+
+        <FooterSubContainer>
+          <FooterTitle> Marketplaces </FooterTitle>
+
+          <a href = "https://solanart.io/collections/antisocialrobots">
+          <ButtonWrap>
+            <Marketplaces> Solanart </Marketplaces>
+          </ButtonWrap>
           </a>
-        </ButtonWrap>
-        <ButtonWrap>
-          <a href="https://twitter.com/AntiSocialBots">
-          <SocialMediaImg src={TwitterImg} />
+
+          <a href = "https://solanart.io/collections/antisocialrobots">
+          <ButtonWrap>
+            <Marketplaces> FTX_US </Marketplaces>
+          </ButtonWrap>
           </a>
-        </ButtonWrap>
-      </SocialMediaRow>
+
+          <a href = "https://digitaleyes.market/collections/Anti%20Social%20Robot%20Club">
+          <ButtonWrap>
+            <Marketplaces> Digital Eyes </Marketplaces>
+          </ButtonWrap>
+          </a>
+
+          <a href = "https://www.magiceden.io/marketplace/anti_social_robot_club">
+          <ButtonWrap>
+            <Marketplaces> Magic Eden </Marketplaces>
+          </ButtonWrap>
+          </a>
+
+        </FooterSubContainer>
+      </FooterRow>
     </FooterContainer>
 
   );

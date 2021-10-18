@@ -10,37 +10,29 @@ import { Element, scroller } from "react-scroll";
 
 const NavbarContainer = styled.div`
   width: 100%;
-  height: 120px;
+  height: 100px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background: rgba(0, 0, 0, 1);
+
+  @media screen and (max-width: 480px) {
+    height: 85px;
+}
   `;
 
 const BrandContainer = styled.div`
-  margin-left: 15%;
+  margin-left: 1%;
+`;
 
-  @media screen and (max-width: 480px) {
-  margin-left: 5%;
-}
-  `;
 
 const AccessibilityContainer = styled.div`
   display: flex;
   flex-direction: row;
+  margin-right: 4%;
 `;
 
-const MetamaskButton = styled(Button)`
-  background-color: transparent;
-  border: none;
-
-  &:hover {
-    background-color: ${theme.primary};
-    border: none;
-    color: rgb(199,199,199);
-  }
-`;
 
 export function Navbar(props) {
   const scrollToAboutSection= () => {
@@ -49,18 +41,17 @@ export function Navbar(props) {
   const scrollToFeaturesSection= () => {
     scroller.scrollTo("featuresSection", { smooth: true, duration: 1500 })
   }
-  const scrollToRoadmapSection= () => {
-    scroller.scrollTo("roadmapSection", { smooth: true, duration: 1500 })
-  }
 
   return (
     <NavbarContainer>
+      <BrandContainer>
+        <Logo inline />
+      </BrandContainer>
+
       <AccessibilityContainer>
-        <Button small onClick={scrollToAboutSection}> About </Button>
+        <Button small onClick={scrollToAboutSection}> Litepaper </Button>
         <Marginer direction="horizontal" margin="16px" />
-        <Button small onClick={scrollToFeaturesSection}> Features </Button>
-        <Marginer direction="horizontal" margin="16px" />
-        <Button small onClick={scrollToRoadmapSection}> Roadmap </Button>
+        <Button small onClick={scrollToFeaturesSection}> Gitbook </Button>
       </AccessibilityContainer>
     </NavbarContainer>
   );

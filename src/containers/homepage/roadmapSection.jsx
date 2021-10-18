@@ -8,13 +8,11 @@ import { OurRoadmap } from "../../components/roadmap";
 import Bounce from 'react-reveal/Bounce';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import Feature1Img from "../../assets/illustrations/snip-penc.PNG";
-import FirstBotRight from "../../assets/illustrations/boxing_sample_rotate_20.png";
-import FirstBotLeft from "../../assets/illustrations/boxing_sample_rotate_negative_20.png";
+
 import { GrMoney } from "react-icons/gr";
-import { FaRobot, FaGem, FaTshirt, FaShoppingBag } from "react-icons/fa";
+import { FaRobot, FaGem, FaTshirt, FaShoppingBag, FaGift } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
-import { GiToyMallet } from "react-icons/gi";
+import { GiToyMallet, GiTwoCoins } from "react-icons/gi";
 import { GrThreeD } from "react-icons/gr";
 
 import BotOneImg from "../../assets/illustrations/bot_1.png";
@@ -46,8 +44,8 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
 
 
 const DetailsHeader = styled.h3`
-  font-family: SF TransRobotics;
-  font-weight: 400;
+  font-family: Share Tech Mono;
+  font-weight: 600;
   font-size: 26px;
 
     @media screen and (max-width: 480px) {
@@ -56,8 +54,8 @@ const DetailsHeader = styled.h3`
 `;
 
 const Details = styled.p`
-  font-family: Disposable Droid BB;
-  font-size: 22px!important;
+  font-family: Share Tech Mono;
+  font-size: 20px!important;
 
     @media screen and (max-width: 480px) {
 
@@ -115,6 +113,14 @@ const ThreeDImg = styled(GrThreeD)`
   color: #000000!important;
 `;
 
+const GiftImg = styled(FaGift)`
+  color: #000000!important;
+`;
+
+const CoinImg = styled(GiTwoCoins)`
+  color: #000000!important;
+`;
+
 export function RoadmapSection(props) {
   return (
     <RoadmapContainer name="roadmapSection">
@@ -130,20 +136,7 @@ export function RoadmapSection(props) {
         >
           <DetailsHeader className="vertical-timeline-element-title">R-Day</DetailsHeader>
           <Details>
-            The day of the Robot Uprising is here. October 1st the bots are available to mint
-          </Details>
-        </StyledVerticalTimelineElement>
-
-        <StyledVerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
-          iconStyle={{ background: '#16B1F3', color: '#fff' }}
-          icon={<RareImg />}
-        >
-          <DetailsHeader className="vertical-timeline-element-title">Rarities Released</DetailsHeader>
-          <Details>
-            The site will be updated to showcase all attributes and their associated rarity value
+            The day of the Robot Uprising. October 1st the original 4,444 2D bots are available to mint for 0.15 SOL
           </Details>
         </StyledVerticalTimelineElement>
 
@@ -156,7 +149,33 @@ export function RoadmapSection(props) {
         >
           <DetailsHeader className="vertical-timeline-element-title">Secondary Marketplace</DetailsHeader>
           <Details>
-             Bots will be listed on Digital Eyes after the mint. We are working on partnerships with other marketplaces as well
+             Bots listed on all major Solana Marketplaces, including Solanart, Digital Eyes, FTX_US, and Magic Eden
+          </Details>
+        </StyledVerticalTimelineElement>
+
+        <StyledVerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<RareImg />}
+        >
+          <DetailsHeader className="vertical-timeline-element-title">Rarities Released</DetailsHeader>
+          <Details>
+            Rarity Chart will be released, as well as an official ranking system on HowRare.is
+          </Details>
+        </StyledVerticalTimelineElement>
+
+        <StyledVerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<GiftImg />}
+        >
+          <DetailsHeader className="vertical-timeline-element-title">USB Airdrop </DetailsHeader>
+          <Details>
+            USB NFT Airdropped to all bot holders with DELISTED bots. Needed to initiate the 3D upgrade
           </Details>
         </StyledVerticalTimelineElement>
 
@@ -167,9 +186,22 @@ export function RoadmapSection(props) {
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
           icon={<ThreeDImg />}
         >
-          <DetailsHeader className="vertical-timeline-element-title">3D Rendered Airdrop</DetailsHeader>
+          <DetailsHeader className="vertical-timeline-element-title">3D Upgrade + Public Mint</DetailsHeader>
           <Details>
-            3D rendered versions of your bot will be airdropped to all A.S.R.C holders to be used in our upcoming play-to-earn game
+            2D bots are available to upgrade on our site. An additional xxxx released in a public sale using Fair Launch Protocol
+          </Details>
+        </StyledVerticalTimelineElement>
+
+        <StyledVerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: '#16B1F3', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
+          iconStyle={{ background: '#16B1F3', color: '#fff' }}
+          icon={<CoinImg />}
+        >
+          <DetailsHeader className="vertical-timeline-element-title">$ROBO Launch</DetailsHeader>
+          <Details>
+            Tokenomics finalized and launch of our in-game token
           </Details>
         </StyledVerticalTimelineElement>
 
@@ -180,34 +212,13 @@ export function RoadmapSection(props) {
           iconStyle={{ background: '#16B1F3', color: '#fff' }}
           icon={<GameImg />}
         >
-          <DetailsHeader className="vertical-timeline-element-title">Game Development</DetailsHeader>
+          <DetailsHeader className="vertical-timeline-element-title">Battle Arena </DetailsHeader>
           <Details>
-            After the mint, we will use the funds to revamp our site to handle a full Play-To-Earn battle-based game
-          </Details>
-        </StyledVerticalTimelineElement>
-
-        <StyledVerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: '#16B1F3', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid', color: '#16B1F3' }}
-          iconStyle={{ background: '#16B1F3', color: '#fff' }}
-          icon={<VoteImg />}
-        >
-          <DetailsHeader className="vertical-timeline-element-title">You Tell Us</DetailsHeader>
-          <Details>
-            As a member of the A.S.R.C your voice matters. Help lead this group of insociable shells to a bright future
+            Beta Launch of the Battle Arena, A simulated, tournament style competition for 3D robots to battle and earn $ROBO
           </Details>
         </StyledVerticalTimelineElement>
 
       </VerticalTimeline>
-
-      <RobotRow>
-          <BaseRobotImg src={BotOneImg} />
-          <BaseRobotImg src={BotTwoImg} />
-          <BaseRobotImg src={BotThreeImg} />
-          <BaseRobotImg src={BotFourImg} />
-
-      </RobotRow>
 
     </RoadmapContainer>
 

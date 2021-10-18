@@ -7,9 +7,6 @@ import { Marginer } from "../../components/marginer";
 import { SectionTitle } from "../../components/sectionTitle";
 import { OurFeaturePen, OurFeatureToken, OurFeatureAvatar, OurFeatureVoice, OurFeaturePrice, OurFeatureBrain } from "../../components/ourFeature";
 
-
-import Feature1Img from "../../assets/illustrations/snip-penc.PNG";
-
 import { ImPencil2 } from "react-icons/im";
 
 const FeaturesContainer = styled(Element)`
@@ -67,7 +64,7 @@ export function FeaturesSection(props) {
           description="Community driven. Have a say in the development of the game and future A.S.R.C decisions"
         />
       <OurFeaturePrice
-          description="Cheap mint cost. All Anti Social Bots will be 1 SOL on drop to give everyone a fair chance"
+          description="Cheap mint cost. All Anti Social Bots will be 0.15 SOL on drop to give everyone a fair chance"
         />
       <OurFeatureBrain
           description="Dedicated and active developers who are excited to explore the depths of the SOL blockchain"
